@@ -103,7 +103,6 @@
         <div>
             <img src="{{ card1.image_url }}" alt="{{ card1.name }}" onerror="this.src='https://via.placeholder.com/250x250/333/666?text=No+Image'">
             <h3>{{ card1.name }}</h3>
-            <div class="elo">ELO: {{ "%.0f"|format(card1.elo_rating) }}</div>
         </div>
         <button class="select-btn">Select This Card</button>
     </div>
@@ -114,7 +113,6 @@
         <div>
             <img src="{{ card2.image_url }}" alt="{{ card2.name }}" onerror="this.src='https://via.placeholder.com/250x250/333/666?text=No+Image'">
             <h3>{{ card2.name }}</h3>
-            <div class="elo">ELO: {{ "%.0f"|format(card2.elo_rating) }}</div>
         </div>
         <button class="select-btn">Select This Card</button>
     </div>

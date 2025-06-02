@@ -1,0 +1,207 @@
+name,image_url,elo_rating,description
+8 Ball,https://i.imgur.com/rW5cp7t.png,1200,"1 in 4 chance for each played 8 to create a Tarot card when scored 
+(Must have room)"
+Abstract Joker,https://i.imgur.com/Qf1By7A.png,1200,"+3 Mult for each Joker card 
+(Currently +0 Mult)"
+Acrobat,https://i.imgur.com/sL4l1NQ.png,1200,X3 Mult on final hand of round
+Ancient Joker,https://i.imgur.com/5PPC9Pv.png,1200,"Each played card with [suit] gives X1.5 Mult when scored,
+suit changes at end of round"
+Arrowhead,https://i.imgur.com/CUZURL4.png,1200,Played cards with Spade suit give +50 Chips when scored
+Astronomer,https://i.imgur.com/DUjOvkI.png,1200,All Planet cards and Celestial Packs in the shop are free
+Banner,https://i.imgur.com/06MMCgv.png,1200,+30 Chips for each remaining discard
+Baron,https://i.imgur.com/FLGJbGn.png,1200,Each King held in hand gives X1.5 Mult
+Baseball Card,https://i.imgur.com/zYhbJxZ.png,1200,Uncommon Jokers each give X1.5 Mult
+Blackboard,https://i.imgur.com/sdNJBJq.png,1200,X3 Mult if all cards held in hand are Spades or Clubs
+Bloodstone,https://i.imgur.com/cuFH6oW.png,1200,1 in 2 chance for played cards with Heart suit to give X1.5 Mult when scored
+Blue Joker,https://i.imgur.com/cWj73sA.png,1200,"+2 Chips for each remaining card in deck 
+(Currently +104 Chips)"
+Blueprint,https://i.imgur.com/eiJSPZu.png,1200,Copies ability of Joker to the right
+Bootstraps,https://i.imgur.com/5RYJwUX.png,1200,"+2 Mult for every $5 you have 
+(Currently +0 Mult)"
+Brainstorm,https://i.imgur.com/phsQNtL.png,1200,Copies the ability of leftmost Joker
+Bull,https://i.imgur.com/ifcBOih.png,1200,"+2 Chips for each $1 you have 
+(Currently +0 Chips)"
+Burglar,https://i.imgur.com/rNQ26oI.png,1200,"When Blind is selected, gain +3 Hands and lose all discards"
+Burnt Joker,https://i.imgur.com/qUhTVUM.png,1200,Upgrade the level of the first discarded poker hand each round
+Business Card,https://i.imgur.com/zA4G1HT.png,1200,Played face cards have a 1 in 2 chance to give $2 when scored
+Campfire,https://i.imgur.com/PmNuX0S.png,1200,"This Joker gains X0.25 Mult for each card sold, resets when Boss Blind is defeated 
+(Currently X1 Mult)"
+Canio,https://i.imgur.com/BZ7of2p.png,1200,"This Joker gains X1 Mult when a face card is destroyed 
+(Currently X1 Mult)"
+Card Sharp,https://i.imgur.com/AwZEJZ9.png,1200,X3 Mult if played poker hand has already been played this round
+Cartomancer,https://i.imgur.com/THswYQA.png,1200,"Create a Tarot card when Blind is selected 
+(Must have room)"
+Castle,https://i.imgur.com/Eba7boZ.png,1200,"This Joker gains +3 Chips per discarded [suit] card, suit changes every round 
+(Currently +0 Chips)"
+Cavendish,https://i.imgur.com/jkNUh8R.png,1200,X3 Mult 1 in 1000 chance this card is destroyed at the end of round
+Ceremonial Dagger,https://i.imgur.com/lGZVDTu.png,1200,"When Blind is selected, destroy Joker to the right and permanently add double its sell value to this Mult 
+(Currently +0 Mult)"
+Certificate,https://i.imgur.com/JONzWoX.png,1200,"When round begins, add a random playing card with a random seal to your hand"
+Chaos the Clown,https://i.imgur.com/fN0uu2D.png,1200,1 free Reroll per shop
+Chicot,https://i.imgur.com/VGKJeXQ.png,1200,Disables effect of every Boss Blind
+Clever Joker,https://i.imgur.com/sgHs9la.png,1200,+80 Chips if played hand contains a Two Pair
+Cloud 9,https://i.imgur.com/HEJYbVC.png,1200,"Earn $1 for each 9 in your full deck at end of round 
+(Currently $4)"
+Constellation,https://i.imgur.com/aIISkxH.png,1200,"This Joker gains X0.1 Mult every time a Planet card is used 
+(Currently X1 Mult)"
+Crafty Joker,https://i.imgur.com/sBZlD11.png,1200,+80 Chips if played hand contains a Flush
+Crazy Joker,https://i.imgur.com/sJ8Hqre.png,1200,+12 Mult if played hand contains a Straight
+Credit Card,https://i.imgur.com/0NyQMmX.png,1200,Go up to -$20 in debt
+Delayed Gratification,https://i.imgur.com/HC49pUz.png,1200,Earn $2 per discard if no discards are used by end of the round
+Devious Joker,https://i.imgur.com/F9FmIur.png,1200,+100 Chips if played hand contains a Straight
+Diet Cola,https://i.imgur.com/kDGNdPx.png,1200,Sell this card to create a free Double Tag
+DNA,https://i.imgur.com/CcdepFJ.png,1200,"If first hand of round has only 1 card, add a permanent copy to deck and draw it to hand"
+Driver's License,https://i.imgur.com/9pnMdex.png,1200,"X3 Mult if you have at least 16 Enhanced cards in your full deck 
+(Currently 0)"
+Droll Joker,https://i.imgur.com/hhTUnhP.png,1200,+10 Mult if played hand contains a Flush
+Drunkard,https://i.imgur.com/Yi22Rp2.png,1200,+1 discard each round
+Dusk,https://i.imgur.com/qaR3Av7.png,1200,Retrigger all played cards in final hand of the round
+Egg,https://i.imgur.com/LGlkRwK.png,1200,Gains $3 of sell value at end of round
+Erosion,https://i.imgur.com/aU47LzY.png,1200,"+4 Mult for each card below [the deck's starting size] in your full deck 
+(Currently +0 Mult)"
+Even Steven,https://i.imgur.com/z273Bx5.png,1200,"Played cards with even rank give +4 Mult when scored 
+(10, 8, 6, 4, 2)"
+Faceless Joker,https://i.imgur.com/bS3mjvU.png,1200,Earn $5 if 3 or more face cards are discarded at the same time
+Fibonacci,https://i.imgur.com/EhtjaDs.png,1200,"Each played Ace, 2, 3, 5, or 8 gives +8 Mult when scored"
+Flash Card,https://i.imgur.com/oGCCuSb.png,1200,"This Joker gains +2 Mult per reroll in the shop
+(Currently +0 Mult)"
+Flower Pot,https://i.imgur.com/M9np2DG.png,1200,"X3 Mult if poker hand contains a Diamond card, Club card, Heart card, and Spade card"
+Fortune Teller,https://i.imgur.com/RsNFojN.png,1200,"+1 Mult per Tarot card used this run
+(Currently +0)"
+Four Fingers,https://i.imgur.com/QYmBThe.png,1200,All Flushes and Straights can be made with 4 cards
+Gift Card,https://i.imgur.com/HG8Iw4c.png,1200,Add $1 of sell value to every Joker and Consumable card at end of round
+Glass Joker,https://i.imgur.com/X8Z0ZLh.png,1200,"This Joker gains X0.75 Mult for every Glass Card that is destroyed
+(Currently X1 Mult)"
+Gluttonous Joker,https://i.imgur.com/KVFgFSU.png,1200,Played cards with Club suit give +3 Mult when scored
+Golden Joker,https://i.imgur.com/mvoi7fX.png,1200,Earn $4 at end of round
+Golden Ticket,https://i.imgur.com/iPiIghF.png,1200,Played Gold cards earn $4 when scored
+Greedy Joker,https://i.imgur.com/NJLgNdo.png,1200,Played cards with Diamond suit give +3 Mult when scored
+Green Joker,https://i.imgur.com/z6cjWqq.png,1200,"+1 Mult per hand played
+-1 Mult per discard
+(Currently +0 Mult)"
+Gros Michel,https://i.imgur.com/9TLo0Cf.png,1200,"+15 Mult
+1 in 6 chance this is destroyed at the end of round."
+Hack,https://i.imgur.com/7uDeuaU.png,1200,"Retrigger each played 2, 3, 4, or 5"
+Half Joker,https://i.imgur.com/d0AVKpL.png,1200,+20 Mult if played hand contains 3 or fewer cards
+Hallucination,https://i.imgur.com/Jfe2eti.png,1200,"1 in 2 chance to create a Tarot card when any Booster Pack is opened
+(Must have room)"
+Hanging Chad,https://i.imgur.com/BeZSpvP.png,1200,Retrigger first played card used in scoring 2 additional times
+Hiker,https://i.imgur.com/rgBa1Aq.png,1200,Every played card permanently gains +5 Chips when scored
+Hit the Road,https://i.imgur.com/T3jmfQQ.png,1200,"This Joker gains X0.5 Mult for every Jack discarded this round
+(Currently X1 Mult)"
+Hologram,https://i.imgur.com/I8cACo4.png,1200,"This Joker gains X0.25 Mult every time a playing card is added to your deck
+(Currently X1 Mult)"
+Ice Cream,https://i.imgur.com/BUFjgtv.png,1200,"+100 Chips
+-5 Chips for every hand played"
+Invisible Joker,https://i.imgur.com/zoYvij4.png,1200,"After 2 rounds, sell this card to Duplicate a random Joker
+(Currently 0/2)
+(Removes Negative from copy)"
+Joker,https://i.imgur.com/6Zgw4XV.png,1200,+4 Mult
+Joker Stencil,https://i.imgur.com/jBgvbWc.png,1200,X1 Mult for each empty Joker slot. Joker Stencil included (Currently X1)
+Jolly Joker,https://i.imgur.com/UTYALjL.png,1200,+8 Mult if played hand contains a Pair
+Juggler,https://i.imgur.com/FfhjDI2.png,1200,+1 hand size	
+Loyalty Card,https://i.imgur.com/uzQlSpD.png,1200,X4 Mult every 6 hands played 5 remaining
+Luchador,https://i.imgur.com/R3dRKHk.png,1200,Sell this card to disable the current Boss Blind	
+Lucky Cat,https://i.imgur.com/NBHIYGb.png,1200,"This Joker gains X0.25 Mult every time a Lucky card successfully triggers
+(Currently X1 Mult)"
+Lusty Joker,https://i.imgur.com/EEWV1ya.png,1200,Played cards with Heart suit give +3 Mult when scored
+Mad Joker,https://i.imgur.com/BAX8Ulk.png,1200,+10 Mult if played hand contains a Two Pair
+Madness,https://i.imgur.com/5POkf9a.png,1200,"When Small Blind or Big Blind is selected, gain X0.5 Mult and destroy a random Joker
+(Currently X1 Mult)"
+Mail-In Rebate,https://i.imgur.com/Ld29QbG.png,1200,"Earn $5 for each discarded [rank], rank changes every round"
+Marble Joker,https://i.imgur.com/R7E08YM.png,1200,Adds one Stone card to the deck when Blind is selected
+Matador,https://i.imgur.com/zMehAZ3.png,1200,Earn $8 if played hand triggers the Boss Blind ability
+Merry Andy,https://i.imgur.com/UTKPs1X.png,1200,"+3 discards each round,
+-1 hand size"
+Midas Mask,https://i.imgur.com/SUvcpKK.png,1200,All played face cards become Gold cards when scored
+Mime,https://i.imgur.com/7R0zwsQ.png,1200,Retrigger all card held in hand abilities
+Misprint,https://i.imgur.com/nD21SzQ.png,1200,+0-23 Mult
+Mr. Bones,https://i.imgur.com/nIWOUyD.png,1200,"Prevents Death if chips scored are at least 25% of required chips
+self destructs"
+Mystic Summit,https://i.imgur.com/Q6fLO4b.png,1200,+15 Mult when 0 discards remaining
+Obelisk,https://i.imgur.com/UUbSXiS.png,1200,"This Joker gains X0.2 Mult per consecutive hand played without playing your most played poker hand
+(Currently X1 Mult)"
+Odd Todd,https://i.imgur.com/LuneZuU.png,1200,"Played cards with odd rank give +31 Chips when scored
+(A, 9, 7, 5, 3)"
+Onyx Agate,https://i.imgur.com/iFTKUug.png,1200,Played cards with Club suit give +7 Mult when scored
+Oops! All 6s,https://i.imgur.com/1TTFNKy.png,1200,"Doubles all listed probabilities
+(ex: 1 in 3 -> 2 in 3)"
+Pareidolia,https://i.imgur.com/kCjhJNR.png,1200,All cards are considered face cards
+Perkeo,https://i.imgur.com/9EvaDGX.png,1200,Creates a Negative copy of 1 random consumable card in your possession at the end of the shop
+Photograph,https://i.imgur.com/fceHuXu.png,1200,First played face card gives X2 Mult when scored
+Popcorn,https://i.imgur.com/qFhtLXr.png,1200,"+20 Mult
+-4 Mult per round played"
+Raised Fist,https://i.imgur.com/6wzCpNk.png,1200,Adds double the rank of lowest ranked card held in hand to Mult	
+Ramen,https://i.imgur.com/GUW9Sw5.png,1200,"X2 Mult, loses X0.01 Mult per card discarded"
+Red Card,https://i.imgur.com/vOq0XTb.png,1200,"This Joker gains +3 Mult when any Booster Pack is skipped
+(Currently +0 Mult)"
+Reserved Parking,https://i.imgur.com/RKgSN3w.png,1200,Each face card held in hand has a 1 in 2 chance to give $1
+Ride the Bus,https://i.imgur.com/fEzZmeJ.png,1200,"This Joker gains +1 Mult per consecutive hand played without a scoring face card
+(Currently +0 Mult)"
+Riff-Raff,https://i.imgur.com/4PnpGFF.png,1200,"When Blind is selected, create 2 Common Jokers
+(Must have room)"
+Rocket,https://i.imgur.com/g3m4b5I.png,1200,Earn $1 at end of round. Payout increases by $2 when Boss Blind is defeated
+Rough Gem,https://i.imgur.com/Sjl6DI0.png,1200,Played cards with Diamond suit earn $1 when scored
+Runner,https://i.imgur.com/T9CxsSq.png,1200,"Gains +15 Chips if played hand contains a Straight
+(Currently +0 Chips)"
+Satellite,https://i.imgur.com/2KuVPGW.png,1200,Earn $1 at end of round per unique Planet card used this run
+Scary Face,https://i.imgur.com/yhYFmAh.png,1200,Played face cards give +30 Chips when scored
+Scholar,https://i.imgur.com/9KqV7qE.png,1200,Played Aces give +20 Chips and +4 Mult when scored
+Seance,https://i.imgur.com/XlhfF8c.png,1200,"If poker hand is a Straight Flush, create a random Spectral card
+(Must have room)"
+Seeing Double,https://i.imgur.com/oyjfOTi.png,1200,X2 Mult if played hand has a scoring Club card and a scoring card of any other suit
+Seltzer,https://i.imgur.com/QqeERHJ.png,1200,Retrigger all cards played for the next 10 hands
+Shoot the Moon,https://i.imgur.com/67mltyS.png,1200,Each Queen held in hand gives +13 Mult
+Shortcut,https://i.imgur.com/okl2qDs.png,1200,"Allows Straights to be made with gaps of 1 rank
+(ex: 10 8 6 5 3)"
+Showman,https://i.imgur.com/dZdEjxx.png,1200,"Joker, Tarot, Planet, and Spectral cards may appear multiple times"
+Sixth Sense,https://i.imgur.com/w4n0HhH.png,1200,"If first hand of round is a single 6, destroy it and create a Spectral card
+(Must have room)"
+Sly Joker,https://i.imgur.com/zlv8fG0.png,1200,+50 Chips if played hand contains a Pair
+Smeared Joker,https://i.imgur.com/IrWKrQg.png,1200,"Hearts and Diamonds count as the same suit, Spades and Clubs count as the same suit"
+Smiley Face,https://i.imgur.com/yNBntmH.png,1200,Played face cards give +5 Mult when scored
+Sock and Buskin,https://i.imgur.com/x9nbOjm.png,1200,Retrigger all played face cards	
+Space Joker,https://i.imgur.com/5EkckBt.png,1200,1 in 4 chance to upgrade level of played poker hand	
+Spare Trousers,https://i.imgur.com/mOxPm8j.png,1200,"This Joker gains +2 Mult if played hand contains a Two Pair
+(Currently +0 Mult)"
+Splash,https://i.imgur.com/qyvwvB3.png,1200,Every played card counts in scoring	
+Square Joker,https://i.imgur.com/ThBuCwC.png,1200,"This Joker gains +4 Chips if played hand has exactly 4 cards
+(Currently 0 Chips)"
+Steel Joker,https://i.imgur.com/BF3tkWf.png,1200,"Gives X0.2 Mult for each Steel Card in your full deck
+(Currently X1 Mult)"
+Stone Joker,https://i.imgur.com/ViCpB6F.png,1200,"Gives +25 Chips for each Stone Card in your full deck
+(Currently +0 Chips)"
+Stuntman,https://i.imgur.com/gSdsWSP.png,1200,"+250 Chips,
+-2 hand size"
+Supernova,https://i.imgur.com/PAq2sDy.png,1200,Adds the number of times poker hand has been played this run to Mult	
+Superposition,https://i.imgur.com/kbLatVf.png,1200,"Create a Tarot card if poker hand contains an Ace and a Straight
+(Must have room)"
+Swashbuckler,https://i.imgur.com/W6dLjo2.png,1200,"Adds the sell value of all other owned Jokers to Mult
+(Currently +1 Mult)"
+The Duo,https://i.imgur.com/A6VQdBC.png,1200,X2 Mult if played hand contains a Pair	
+The Family,https://i.imgur.com/SxZi09W.png,1200,X4 Mult if played hand contains a Four of a Kind	
+The Idol,https://i.imgur.com/go7qe8Y.png,1200,"Each played [rank] of [suit] gives X2 Mult when scored
+Card changes every round"
+The Order,https://i.imgur.com/pgswb94.png,1200,X3 Mult if played hand contains a Straight	
+The Tribe,https://i.imgur.com/jAnhyUZ.png,1200,X2 Mult if played hand contains a Flush	
+The Trio,https://i.imgur.com/tDvM9oa.png,1200,X3 Mult if played hand contains a Three of a Kind	
+Throwback,https://i.imgur.com/JvwHsIN.png,1200,"X0.25 Mult for each Blind skipped this run
+(Currently X1 Mult)"
+To Do List,https://i.imgur.com/pLdR6nC.png,1200,"Earn $4 if poker hand is a [Poker Hand], poker hand changes at end of round"
+To The Moon,https://i.imgur.com/NkfgfU7.png,1200,Earn an extra $1 of interest for every $5 you have at end of round
+Trading Card,https://i.imgur.com/qUjNxZo.png,1200,"If first discard of round has only 1 card, destroy it and earn $3"
+Triboulet,https://i.imgur.com/yI44IGH.png,1200,Played Kings and Queens each give X2 Mult when scored	
+Troubadour,https://i.imgur.com/QGN6JgS.png,1200,"+2 hand size,
+-1 hand per round"
+Turtle Bean,https://i.imgur.com/MJdG02s.png,1200,"+5 hand size, reduces by 1 each round"
+Vagabond,https://i.imgur.com/KJgEYy1.png,1200,Create a Tarot card if hand is played with $4 or less
+Vampire,https://i.imgur.com/akyOaL5.png,1200,"This Joker gains X0.1 Mult per scoring Enhanced card played, removes card Enhancement
+(Currently X1 Mult)"
+Walkie Talkie,https://i.imgur.com/gQPMjLj.png,1200,Each played 10 or 4 gives +10 Chips and +4 Mult when scored
+Wee Joker,https://i.imgur.com/90hHZzx.png,1200,"This Joker gains +8 Chips when each played 2 is scored
+(Currently +0  Chips)"
+Wily Joker,https://i.imgur.com/aNpdTUR.png,1200,+100 Chips if played hand contains a Three of a Kind
+Wrathful Joker,https://i.imgur.com/Ds8POrz.png,1200,Played cards with Spade suit give +3 Mult when scored
+Yorick,https://i.imgur.com/2iypxTS.png,1200,"This Joker gains X1 Mult every 23 [23] cards discarded
+(Currently X1 Mult)"
+Zany Joker,https://i.imgur.com/XJ19vfM.png,1200,+12 Mult if played hand contains a Three of a Kind

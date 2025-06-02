@@ -4,7 +4,7 @@ from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 import crud
-from database import connect_to_mongo, close_mongo_connection
+from database import connect_to_mongo, close_mongo_connection, database
 
 app = FastAPI(title="Card Comparison App", description="Compare cards using ELO ratings")
 
@@ -18,6 +18,8 @@ templates = Jinja2Templates(directory="templates")
 @app.on_event("startup")
 async def startup_event():
     await connect_to_mongo()
+    # The connection function will raise an exception if it fails
+    print("Application startup completed successfully!")
 
 
 @app.on_event("shutdown")
@@ -81,10 +83,10 @@ async def get_cards():
 
 
 @app.post("/api/cards")
-async def create_card(name: str = Form(...), image_url: str = Form(...)):
+async def create_card(name: str = Form(...), image_url: str = Form(...), description: str = Form("")):
     """API endpoint to create a new card"""
     try:
-        card = await crud.create_card(name, image_url)
+        card = await crud.create_card(name, image_url, description or "No description available")
         return {"success": True, "card_id": str(card.id)}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

@@ -1,0 +1,18 @@
+<!-- templates/error.html -->
+{% extends "base.html" %}
+
+{% block page_title %}Error{% endblock %}
+{% block page_description %}Something went wrong{% endblock %}
+
+{% block content %}
+<div class="error">
+    <h3>Error</h3>
+    <p>{{ message }}</p>
+</div>
+
+<div style="text-align: center; margin-top: 30px;">
+    <a href="/" style="color: #007bff; text-decoration: none; padding: 10px 20px; border: 1px solid #007bff; border-radius: 5px;">
+        Go Back to Home
+    </a>
+</div>
+{% endblock %}

@@ -73,11 +73,16 @@ async def get_random_card_pair() -> Tuple[CardResponse, CardResponse]:
     )
 
 
-async def get_leaderboard(limit: int = 20) -> List[CardResponse]:
+async def get_leaderboard(limit: int = None) -> List[CardResponse]:
     """Get cards sorted by ELO rating"""
     db = get_database()
     cards = []
-    async for card_data in db.Cards.find().sort("elo_rating", -1).limit(limit):
+    
+    query = db.Cards.find().sort("elo_rating", -1)
+    if limit is not None:
+        query = query.limit(limit)
+    
+    async for card_data in query:
         card = Card(**card_data)
         cards.append(CardResponse(
             id=str(card.id),

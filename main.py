@@ -6,7 +6,14 @@ from fastapi.staticfiles import StaticFiles
 import crud
 from database import connect_to_mongo, close_mongo_connection, database
 
-app = FastAPI(title="Card Comparison App", description="Compare cards using ELO ratings")
+app = FastAPI(title="Balatro Joker Arena", description="Compare jokers with ELO")
+
+# Setup templates
+templates = Jinja2Templates(directory="templates")
+
+# Mount static files (for CSS/JS if needed)
+# app.mount("/static", StaticFiles(directory="static"), name="static")
+
 
 # Setup templates
 templates = Jinja2Templates(directory="templates")

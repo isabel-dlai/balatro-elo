@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Card Comparison App{% endblock %}</title>
     <style>
+        /* Reset & Base Styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        html {
+            height: 100%;
         }
         
         body {
@@ -17,8 +22,7 @@
             background-color: #000;
             color: #fff;
             min-height: 100vh;
-            display: flex;
-            flex-direction: column;
+            height: 100%;
         }
         
         .container {
@@ -27,43 +31,90 @@
             padding: 20px;
             flex: 1;
         }
-        
+
+        /* =====================================
+           Header + Title + Tab Navigation Styles
+           ===================================== */
         .header {
-            text-align: center;
-            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
         }
-        
+
+        /* Left‐side: Title + Description */
+        .header .title-container {
+            display: flex;
+            flex-direction: column;
+        }
+
         .header h1 {
             font-size: 2.5rem;
-            margin-bottom: 10px;
             color: #fff;
+            margin-bottom: 8px;
         }
-        
+
         .header p {
             font-size: 1.1rem;
             color: #ccc;
         }
-        
-        .nav {
-            text-align: center;
-            margin-bottom: 30px;
+
+        /* Right‐side: Tab Navigation */
+        .tab-nav {
+            display: flex;
+            background-color: #111;
+            border-bottom: 2px solid #333;
+            border-radius: 8px;
+            overflow: hidden;
         }
-        
-        .nav a {
-            color: #fff;
+
+        .tab-item {
+            color: #bbb;
             text-decoration: none;
-            margin: 0 15px;
-            padding: 10px 20px;
-            border: 1px solid #333;
-            border-radius: 5px;
+            padding: 14px 28px;
+            font-size: 1rem;
             transition: all 0.3s ease;
+            position: relative;
         }
-        
-        .nav a:hover {
-            background-color: #333;
-            border-color: #666;
+
+        .tab-item:not(.active):hover {
+            color: #fff;
+            background-color: #222;
         }
-        
+
+        .tab-item.active {
+            color: #fff;
+            background-color: #222;
+            font-weight: bold;
+        }
+
+        .tab-item.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 3px;
+            background-color: #fff;
+            border-radius: 2px;
+        }
+
+        @media (max-width: 768px) {
+            .tab-item {
+                padding: 12px 20px;
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .tab-item {
+                padding: 10px 16px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Alert Styles */
         .error {
             background-color: #dc3545;
             color: white;
@@ -86,19 +137,28 @@
 </head>
 <body>
     <div class="container">
+        <!-- Header: Title on Left, Tabs on Right -->
         <div class="header">
-            <h1>{% block page_title %}Balatro Joker Arena{% endblock %}</h1>
-            <p>{% block page_description %}Select the joker you would prefer.{% endblock %}</p>
+            <div class="title-container">
+                <h1>Balatro Joker Arena</h1>
+                <p>{% block page_description %}Select the joker you would prefer.{% endblock %}</p>
+            </div>
+
+            <nav class="tab-nav">
+                <a href="/"
+                   class="tab-item {% if request.url.path == '/' %}active{% endif %}">
+                    Arena
+                </a>
+                <a href="/leaderboard"
+                   class="tab-item {% if request.url.path == '/leaderboard' %}active{% endif %}">
+                    Leaderboard
+                </a>
+            </nav>
         </div>
-        
-        <div class="nav">
-            <a href="/">Compare Cards</a>
-            <a href="/leaderboard">Leaderboard</a>
-        </div>
-        
+
         {% block content %}{% endblock %}
     </div>
-    
+
     {% block extra_js %}{% endblock %}
 </body>
 </html>

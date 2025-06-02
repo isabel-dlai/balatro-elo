@@ -3,101 +3,111 @@
 
 {% block extra_css %}
 <style>
+    /* Container holding both cards */
     .card-comparison {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 40px;
         flex-wrap: wrap;
-        margin: 40px 0;
+        margin: 20px 0;
     }
-    
+
+    body {
+        height: 100%;
+    }
+
+    /* ================================
+       Responsive .card rules start here
+       ================================ */
     .card {
+        /* Max width 350px, but shrink to 90vw on narrow screens */
+        width: min(350px, 90vw);
+        /* Maintain a 2:3 (width : height) ratio for playing-card shape */
+        aspect-ratio: 2 / 3;
+
         background-color: #111;
         border: 2px solid #333;
         border-radius: 10px;
-        padding: 20px;
+        padding: 12px;
         text-align: center;
         cursor: pointer;
         transition: all 0.3s ease;
-        width: 350px;
+
         display: flex;
         flex-direction: column;
+        /* Distribute space so top (image) and bottom (text) stay balanced */
         justify-content: space-between;
     }
-    
+
     .card:hover {
         border-color: #666;
         background-color: #222;
         transform: translateY(-5px);
         box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
     }
-    
+
+    /* ========================
+       Inner-content adjustments
+       ======================== */
     .card .card-content {
-        flex: 1;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
+        height: 100%;
     }
-    
+
     .card .image-container {
         width: 100%;
-        height: 350px;
+        /* No fixed height—let image itself constrain within max-height */
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
         overflow: hidden;
-        border-radius: 5px;
+        border-radius: 8px;
     }
-    
+
     .card img {
+        /* Never exceed container’s width or 60% of the card’s height */
         max-width: 100%;
         max-height: 100%;
+        height: auto;
         object-fit: contain;
-        border-radius: 5px;
+        border-radius: 8px;
     }
-    
+
     .card h3 {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         margin-bottom: 10px;
         color: #fff;
+        flex: 0 0 auto;
     }
-    
+
     .card .description {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         color: #bbb;
-        margin-bottom: 15px;
         line-height: 1.4;
-        height: 60px;
+        flex: 0 0 20%;
         display: flex;
         align-items: center;
         justify-content: center;
         overflow: hidden;
         text-align: center;
     }
-    
-    .card .select-btn {
-        background-color: #007bff;
-        color: white;
-        border: none;
-        padding: 12px 24px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 1rem;
-        transition: background-color 0.3s ease;
-    }
-    
-    .card .select-btn:hover {
+
+    .card:hover .select-btn {
         background-color: #0056b3;
     }
-    
+
+    /* “VS” between cards */
     .vs {
         font-size: 2rem;
         color: #666;
         font-weight: bold;
     }
-    
+
+    /* Loading text */
     .loading {
         display: none;
         text-align: center;
@@ -105,76 +115,114 @@
         color: #666;
         margin: 20px 0;
     }
-    
+
+    /* ================================
+       Skip button styling
+       ================================ */
+    #skipBtn {
+        display: block;
+        margin: 10px auto;
+        width: 160px;
+        padding: 12px 0;
+        background-color: #111;
+        color: #fff;
+        border: 2px solid #333;
+        border-radius: 10px;
+        font-size: 1rem;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    #skipBtn:hover {
+        background-color: #222;
+        border-color: #666;
+    }
+
+    /* ================================
+       Mobile media query
+       ================================ */
     @media (max-width: 768px) {
         .card-comparison {
             flex-direction: column;
             gap: 20px;
         }
-        
+
         .vs {
             transform: rotate(90deg);
             margin: 0;
         }
+
+        /* On very small screens, keep skip button at ~90% width */
+        #skipBtn {
+            width: 90%;
+            max-width: 160px;
+        }
     }
+
+    
 </style>
 {% endblock %}
 
 {% block content %}
-<div class="card-comparison">
-    <div class="card" onclick="selectCard('{{ card1.id }}', '{{ card2.id }}')">
-        <div class="card-content">
-            <div class="image-container">
-                <img src="{{ card1.image_url }}" alt="{{ card1.name }}" onerror="this.src='https://via.placeholder.com/250x250/333/666?text=No+Image'">
-            </div>
-            <h3>{{ card1.name }}</h3>
-            <div class="description">{{ card1.description }}</div>
-        </div>
-    </div>
-    
-    <div class="vs">VS</div>
-    
-    <div class="card" onclick="selectCard('{{ card2.id }}', '{{ card1.id }}')">
-        <div class="card-content">
-            <div class="image-container">
-                <img src="{{ card2.image_url }}" alt="{{ card2.name }}" onerror="this.src='https://via.placeholder.com/250x250/333/666?text=No+Image'">
-            </div>
-            <h3>{{ card2.name }}</h3>
-            <div class="description">{{ card2.description }}</div>
-        </div>
-    </div>
-</div>
+  <div class="card-comparison">
+      <div class="card" onclick="selectCard('{{ card1.id }}', '{{ card2.id }}')">
+          <div class="card-content">
+              <div class="image-container">
+                  <img
+                      src="{{ card1.image_url }}"
+                      alt="{{ card1.name }}"
+                      onerror="this.src='https://via.placeholder.com/375x375/333/666?text=No+Image'">
+              </div>
+              <h3>{{ card1.name }}</h3>
+              <div class="description">{{ card1.description }}</div>
+          </div>
+      </div>
 
-<div class="loading" id="loading">
-    Recording your choice and loading new cards...
-</div>
+      <div class="vs">VS</div>
 
-<div id="message"></div>
+      <div class="card" onclick="selectCard('{{ card2.id }}', '{{ card1.id }}')">
+          <div class="card-content">
+              <div class="image-container">
+                  <img
+                      src="{{ card2.image_url }}"
+                      alt="{{ card2.name }}"
+                      onerror="this.src='https://via.placeholder.com/375x375/333/666?text=No+Image'">
+              </div>
+              <h3>{{ card2.name }}</h3>
+              <div class="description">{{ card2.description }}</div>
+          </div>
+      </div>
+  </div>
+
+  <button id="skipBtn">Skip</button>
+
+  <div class="loading" id="loading">
+      Recording your choice and loading new cards...
+  </div>
+
+  <div id="message"></div>
 {% endblock %}
 
 {% block extra_js %}
 <script>
 async function selectCard(winnerId, loserId) {
-    // Show loading
     document.getElementById('loading').style.display = 'block';
-    
-    // Hide cards during processing
     document.querySelector('.card-comparison').style.opacity = '0.5';
-    
+
     try {
         const formData = new FormData();
         formData.append('winner_id', winnerId);
         formData.append('loser_id', loserId);
-        
+
         const response = await fetch('/compare', {
             method: 'POST',
             body: formData
         });
-        
+
         const result = await response.json();
-        
+
         if (result.success) {
-            // Reload the page to get new cards
             window.location.reload();
         } else {
             showMessage('Error recording comparison', 'error');
@@ -187,12 +235,16 @@ async function selectCard(winnerId, loserId) {
     }
 }
 
+document.getElementById('skipBtn').addEventListener('click', function() {
+    location.reload();
+});
+
 function showMessage(text, type) {
     const messageDiv = document.getElementById('message');
     messageDiv.className = type;
     messageDiv.textContent = text;
     messageDiv.style.display = 'block';
-    
+
     setTimeout(() => {
         messageDiv.style.display = 'none';
     }, 3000);

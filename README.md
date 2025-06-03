@@ -4,6 +4,8 @@ Which of two jokers would you take? This app allows the community to establish a
 
 🔗 [View the live site and leaderboard here!](https://balatro-joker-arena.up.railway.app/)
 
+![screenshot of Balatro Joker Arena](https://i.imgur.com/UG2Hway.png)
+
 ## Intellectual Property
 
 All joker images and descriptions were retrieved from the 🔗 [Balatro Wiki](https://balatrogame.fandom.com/wiki/Balatro_Wiki) and are property of LocalThunk. 

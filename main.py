@@ -70,7 +70,7 @@ async def compare_cards(winner_id: str = Form(...), loser_id: str = Form(...)):
 async def leaderboard(request: Request):
     """Leaderboard page showing top-rated cards"""
     try:
-        cards = await crud.get_leaderboard(limit=50)
+        cards = await crud.get_leaderboard()
         return templates.TemplateResponse(
             "leaderboard.html", 
             {"request": request, "cards": cards}

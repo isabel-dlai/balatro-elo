@@ -205,7 +205,6 @@
 {% block extra_js %}
 <script>
 async function selectCard(winnerId, loserId) {
-    document.getElementById('loading').style.display = 'block';
     document.querySelector('.card-comparison').style.opacity = '0.5';
 
     try {
@@ -228,7 +227,7 @@ async function selectCard(winnerId, loserId) {
     } catch (error) {
         showMessage('Error: ' + error.message, 'error');
     } finally {
-        document.getElementById('loading').style.display = 'none';
+
         document.querySelector('.card-comparison').style.opacity = '1';
     }
 }

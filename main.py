@@ -2,9 +2,8 @@
 from fastapi import FastAPI, Request, HTTPException, Form
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
-from fastapi.staticfiles import StaticFiles
 import crud
-from database import connect_to_mongo, close_mongo_connection, database
+from database import connect_to_mongo, close_mongo_connection
 
 app = FastAPI(title="Balatro Joker Arena", description="Compare jokers with ELO")
 
@@ -41,13 +40,13 @@ async def homepage(request: Request):
         card_count = await crud.get_card_count()
         if card_count < 2:
             return templates.TemplateResponse(
-                "error.html", 
+                "error.html",
                 {"request": request, "message": "Not enough cards in database. Please add at least 2 cards."}
             )
-        
+
         card1, card2 = await crud.get_random_card_pair()
         return templates.TemplateResponse(
-            "index.html", 
+            "index.html",
             {"request": request, "card1": card1, "card2": card2}
         )
     except Exception as e:
@@ -72,7 +71,7 @@ async def leaderboard(request: Request):
     try:
         cards = await crud.get_leaderboard()
         return templates.TemplateResponse(
-            "leaderboard.html", 
+            "leaderboard.html",
             {"request": request, "cards": cards}
         )
     except Exception as e:
